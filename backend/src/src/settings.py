@@ -70,6 +70,10 @@ CORS_ORIGIN_WHITELIST = (
 
 AUTH_USER_MODEL = 'profiles.User'
 
+JWT_AUTH = {
+    'JWT_RESPONSE_PAYLOAD_HANDLER': '..utils.my_jwt_response_handler'
+}
+
 ROOT_URLCONF = 'src.urls'
 
 TEMPLATES = [
