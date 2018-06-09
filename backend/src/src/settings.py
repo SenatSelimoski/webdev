@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
-    'profiles',
+    'profiles.apps.ProfilesConfig',
 ]
 
 MIDDLEWARE = [
@@ -67,6 +67,8 @@ REST_FRAMEWORK = {
 CORS_ORIGIN_WHITELIST = (
     'localhost:3000',
 )
+
+AUTH_USER_MODEL = 'profiles.User'
 
 ROOT_URLCONF = 'src.urls'
 
@@ -122,9 +124,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'mk-MK'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Skopje'
 
 USE_I18N = True
 
